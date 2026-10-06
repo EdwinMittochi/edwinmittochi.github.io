@@ -27,7 +27,7 @@ export const navLinks = [
 ] as const;
 
 export const socials = [
-  { label: "GitHub", glyph: "◉", href: "https://github.com/" },
+  { label: "GitHub", glyph: "◉", href: "https://github.com/EdwinMittochi" },
   { label: "LinkedIn", glyph: "in", href: "https://www.linkedin.com/" },
   { label: "Facebook", glyph: "♥", href: "https://www.facebook.com/" },
   { label: "Email", glyph: "✉", href: `mailto:${profile.email}` },
@@ -103,11 +103,11 @@ export const education = [
   {
     title: "BSc in Computer Science",
     school: "DMI St. John The Baptist University",
-    period: "2020 – 2024",
+    period: "2019 – 2023",
   },
   {
     title: "Malawi School Certificate of Education (MSCE)",
-    school: "Mchinji Community Day Secondary School",
+    school: "Mthunzi Private Secondary School",
     period: "2016 – 2019",
   },
 ] as const;
