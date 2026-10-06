@@ -10,9 +10,9 @@ export const profile = {
   about:
     "Motivated and results-driven Computer Science graduate with experience in data management, software development, and digital communication. Skilled in Python, Java, and modern web technologies. Passionate about leveraging technology to solve real-world problems and improve organizational efficiency.",
   // Put your CV in /public with this file name to enable the download button.
-  cvHref: "/Edwin-Mittochi-CV.pdf",
-  email: "edwinmittochi@gmail.com",
-  phone: "+265 88 123 4567",
+  cvHref: "Edwin-Mittochi-CV.pdf",
+  email: "edwinmittochi25@gmail.com",
+  phone: "+265 88 609 0363",
   location: "Lilongwe, Malawi",
 } as const;
 
