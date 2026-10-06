@@ -28,8 +28,8 @@ export const navLinks = [
 
 export const socials = [
   { label: "GitHub", glyph: "◉", href: "https://github.com/EdwinMittochi" },
-  { label: "LinkedIn", glyph: "in", href: "https://www.linkedin.com/" },
-  { label: "Facebook", glyph: "♥", href: "https://www.facebook.com/" },
+  { label: "LinkedIn", glyph: "in", href: "https://www.linkedin.com/in/edwin-mittochi-1b20a42b6/" },
+  { label: "Facebook", glyph: "♥", href: "https://www.facebook.com/share/1ETPLyCxBH/" },
   { label: "Email", glyph: "✉", href: `mailto:${profile.email}` },
 ] as const;
 
