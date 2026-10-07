@@ -12,9 +12,9 @@ const inter = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Edwin Mittochi | Computer Science Graduate & Developer",
+  title: "Edwin Mittochi | Computer Scientist & Developer",
   description:
-    "Portfolio of Edwin Mittochi — Computer Science graduate, developer and IT professional building reliable, efficient and user-friendly digital solutions.",
+    "Portfolio of Edwin Mittochi — Computer Scientist, developer and IT professional building reliable, efficient and user-friendly digital solutions.",
 };
 
 // Runs before first paint so the saved theme is applied without a flash.
@@ -31,7 +31,18 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body className="min-h-screen font-sans">{children}</body>
+      <body className="min-h-screen bg-background font-sans">
+  <div className="relative min-h-screen">
+    {/* Background glow */}
+    {/* Black + red background */}
+{/* Theme-aware background */}
+<div className="pointer-events-none fixed inset-0 -z-10 bg-[var(--page)]">
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(220,38,38,0.18),transparent_35%),radial-gradient(circle_at_80%_40%,rgba(185,28,28,0.14),transparent_35%),radial-gradient(circle_at_50%_100%,rgba(127,29,29,0.16),transparent_40%)]" />
+</div>
+
+    {children}
+  </div>
+</body>
     </html>
   );
 }

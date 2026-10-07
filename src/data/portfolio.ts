@@ -4,7 +4,7 @@ export const profile = {
   greeting: "Hello, I'm",
   firstName: "EDWIN",
   lastName: "MITTOCHI",
-  headline: ["COMPUTER SCIENCE GRADUATE", "DEVELOPER • IT PROFESSIONAL"],
+  headline: ["COMPUTER SCIENTIST", "DEVELOPER • IT PROFESSIONAL"],
   tagline:
     "I build reliable, efficient and user-friendly digital solutions that solve real-world problems and drive impact.",
   about:
@@ -51,21 +51,21 @@ export const skills = [
 export const experience = [
   {
     period: "Oct 2025 – Present",
-    role: "Social Media Manager – Kodify Lab",
+    role: "Social Media Manager(Online) – Kodify Lab",
     description:
       "Manage social media platforms, create engaging content, run campaigns, analyze performance and grow online presence.",
     type: "Current",
   },
   {
     period: "Jul 2022 – Sep 2022",
-    role: "Computer Studies Teacher – Peamann High School",
+    role: "Computer Studies Teacher – SOS Secondary School",
     description:
       "Taught computer studies, ICT skills and digital literacy. Assisted students in practicals and assessments.",
     type: "Contract",
   },
   {
     period: "Mar 2022 – Jun 2022",
-    role: "ICT Intern – Mchinji District Council",
+    role: "Data Entry Clerk – Mponera Rural Hospital",
     description:
       "Provided IT support, maintained systems, managed data and assisted in day-to-day ICT operations.",
     type: "Internship",

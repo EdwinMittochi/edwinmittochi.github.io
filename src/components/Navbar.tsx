@@ -56,7 +56,9 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 pt-4 sm:pt-6">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
-        <nav className="flex items-center justify-between gap-4 rounded-2xl border border-line bg-card px-5 py-4 sm:px-8">
+        <nav className="flex items-center justify-between gap-4 rounded-2xl border border-line bg-card bg-white/2 backdrop-blur-md px-5 py-4 sm:px-8"
+        style={{ borderColor: "var(--card-border)" }}
+        >
           <a href="#home" className="text-sm font-bold tracking-wide sm:text-base">
             {profile.initials} <span className="ml-1">{profile.name.toUpperCase()}</span>
           </a>

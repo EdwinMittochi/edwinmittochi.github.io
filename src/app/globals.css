@@ -5,28 +5,30 @@
 
 /* Dark theme (default) — values taken from the Figma design */
 :root {
-  --page: url(/back.png);
+  --page: #000000;
   --card: #06090b;
   --card-2: #030305;
+  --card-border: rgba(255, 255, 255, 0.10);
   --line: #2e333b;
   --fg: #edf0f5;
   --muted: #9ea3ad;
   --accent: #ff141a;
   --glow-1: 0.1;
-  --glow-2: 0.07;
+  --glow-2: 0.14;
 }
 
 /* Light theme */
 [data-theme="light"] {
-  --page: #f7f8fa;
+  --page: #ffffff;
   --card: #ffffff;
   --card-2: #fafafb;
+  --card-border: rgba(0, 0, 0, 0.12);
   --line: #e4e7ec;
   --fg: #101828;
   --muted: #667085;
   --accent: #ff1f2d;
-  --glow-1: 0.1;
-  --glow-2: 0.08;
+  --glow-1: 0.08;
+  --glow-2: 0.06;
 }
 
 @theme inline {
@@ -50,7 +52,7 @@ html[data-theme="light"] {
 }
 
 body {
-  background-image: var(--page);
+  background-color: var(--page);
   color: var(--fg);
 }
 
