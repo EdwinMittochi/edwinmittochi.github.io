@@ -4,7 +4,7 @@ export const profile = {
   greeting: "Hello, I'm",
   firstName: "EDWIN",
   lastName: "MITTOCHI",
-  headline: ["COMPUTER SCIENTIST", "DEVELOPER • IT PROFESSIONAL"],
+  headline: ["COMPUTER SCIENTIST,", "DEVELOPER • IT PROFESSIONAL"],
   tagline:
     "I build reliable, efficient and user-friendly digital solutions that solve real-world problems and drive impact.",
   about:
