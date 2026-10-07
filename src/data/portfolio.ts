@@ -78,7 +78,7 @@ export const projects = [
     title: "Secure Barcode System",
     description:
       "A web-based system for generating and scanning secure barcodes to manage and verify items efficiently.",
-    tags: ["PHP", "MySQL", "JavaScript"],
+    tags: ["Java", "MySQL", "XML"],
     href: "#",
   },
   {
