@@ -1,5 +1,5 @@
 "use client";
-
+import { EMLogo } from "@/components/EmLogo";
 import { useEffect, useState } from "react";
 import { navLinks, profile } from "@/data/portfolio";
 
@@ -59,9 +59,9 @@ export default function Navbar() {
         <nav className="flex items-center justify-between gap-4 rounded-2xl border border-line bg-card bg-white/2 backdrop-blur-md px-5 py-4 sm:px-8"
         style={{ borderColor: "var(--card-border)" }}
         >
-          <a href="#home" className="text-sm font-bold tracking-wide sm:text-base">
-            {profile.initials} <span className="ml-1">{profile.name.toUpperCase()}</span>
-          </a>
+          <a href="/" className="text-accent">
+  <EMLogo />
+</a>
 
           <ul className="hidden items-center gap-8 lg:flex">
             {navLinks.map((link) => (

@@ -20,9 +20,9 @@ export default function Experience() {
           {experience.map((item) => (
             <li
               key={item.period}
-              className="grid gap-3 md:grid-cols-[180px_1fr_auto] md:items-start md:gap-6"
+              className="grid gap-3 md:grid-cols-[180px_1fr_auto] md:items-start md:gap-6 rounded-2xl border border-line bg-card-2 p-6 transition-colors "
             >
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 ">
                 <span className="h-3 w-3 shrink-0 rounded-full bg-accent" />
                 <span className="text-sm font-semibold text-accent">{item.period}</span>
               </div>

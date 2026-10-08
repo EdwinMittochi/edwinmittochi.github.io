@@ -18,7 +18,7 @@ export default function Education() {
 
         <ol className="space-y-6">
           {education.map((item) => (
-            <li key={item.title} className="flex gap-4">
+            <li key={item.title} className="flex gap-4 rounded-2xl border border-line bg-card-2 p-6 transition-colors ">
               <span className="mt-1.5 h-3 w-3 shrink-0 rounded-full bg-accent" />
               <div>
                 <p className="text-xs font-semibold tracking-wide text-accent">{item.period}</p>
