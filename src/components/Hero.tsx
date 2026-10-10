@@ -1,3 +1,5 @@
+import TypingText from "@/components/TypingText";
+import RotatingTitle from "./RotatingTitle";
 import Image from "next/image";
 import { profile, socials } from "@/data/portfolio";
 import { Card, Glow } from "@/components/ui";
@@ -17,17 +19,15 @@ export default function Hero() {
       <Card className="relative overflow-hidden px-6 py-10 sm:px-10 sm:py-14 lg:px-14">
         <div className="grid items-center gap-10 lg:grid-cols-[1.2fr_1fr]">
           <div>
-            <p className="mb-4 text-lg font-semibold text-accent sm:text-xl">{profile.greeting}</p>
+            <p className="mb-4 min-h-[1.75rem] text-lg font-semibold text-accent sm:min-h-[2rem] sm:text-xl">
+                <TypingText text={profile.greeting} speed={100} />
+            </p>
             <h1 className="text-4xl font-extrabold leading-[1.1] sm:text-5xl lg:text-6xl">
               {profile.firstName}
               <br />
               {profile.lastName}
             </h1>
-            <p className="mt-4 max-w-md text-base font-bold uppercase leading-snug text-accent sm:text-lg">
-              {profile.headline[0]}
-              <br />
-              {profile.headline[1]}
-            </p>
+            <RotatingTitle />
             <div className="my-6 h-1 w-24 rounded bg-accent" />
             <p className="max-w-md text-sm leading-relaxed text-muted sm:text-base">{profile.tagline}</p>
 
@@ -65,17 +65,16 @@ export default function Hero() {
           </div>
 
           {/* Profile photo */}
-          <div className="rounded-2xl border-2 border-accent p-6 sm:p-8 lg:justify-self-end">
-            <div className="relative aspect-[4/5] w-full max-w-[320px] overflow-hidden rounded-xl border border-line bg-card-2 lg:max-w-none">
+          <div className="w-full max-w-[400px] rounded-2xl border-2 border-accent p-4 sm:p-6 lg:justify-self-end">
+            <div className="relative h-[400px] w-full overflow-hidden rounded-xl border border-line bg-card-2 sm:h-[480px]">
               <Image
                 src="/profile-photo.jpg"
                 alt={`${profile.name} profile photo`}
                 fill
                 priority
-                sizes="(min-width: 1024px) 480px, 320px"
+                sizes="(min-width: 1024px) 400px, 100vw"
                 className="object-cover"
               />
-              <p>yesssssssssssssssssssssssss</p>
             </div>
           </div>
           

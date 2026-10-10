@@ -14,6 +14,7 @@ export function Container({
   );
 }
 
+
 export function Card({
   children,
   className = "",
@@ -23,10 +24,22 @@ export function Card({
 }) {
   return (
     <div
-      className={`rounded-2xl border bg-white/2 backdrop-blur-xl shadow-[0_1px_0_rgba(255,255,255,0.02)_inset] ${className}`}
+      className={`group/card relative isolate overflow-hidden rounded-2xl border bg-white/2 backdrop-blur-xl shadow-[0_1px_0_rgba(255,255,255,0.02)_inset] ${className}`}
       style={{ borderColor: "var(--card-border)" }}
     >
-      {children}
+      {/* Glass reflection */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 z-10 overflow-hidden rounded-[inherit]"
+      >
+        <div
+          className="absolute -inset-y-1/2 -left-1/2 w-1/3 -skew-x-[25deg] bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 transition-[left,opacity] duration-700 ease-out group-hover/card:left-[130%] group-hover/card:opacity-100 motion-reduce:transition-none"
+        />
+      </div>
+
+      <div className="relative z-0">
+        {children}
+      </div>
     </div>
   );
 }

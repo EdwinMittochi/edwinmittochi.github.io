@@ -1,9 +1,10 @@
+
 export function EMLogo() {
   return (
     <svg
       width="44"
-      height="36"
-      viewBox="0 0 44 36"
+      height="30"
+      viewBox="0 0 44 30"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       aria-label="EM logo"
@@ -11,28 +12,28 @@ export function EMLogo() {
     >
       {/* E */}
       <path
-        d="M5 6H19"
+        d="M5 4H19"
         stroke="currentColor"
         strokeWidth="3.5"
         strokeLinecap="round"
       />
 
       <path
-        d="M5 18H17"
+        d="M5 15H17"
         stroke="currentColor"
         strokeWidth="3.5"
         strokeLinecap="round"
       />
 
       <path
-        d="M5 30H19"
+        d="M5 26H19"
         stroke="currentColor"
         strokeWidth="3.5"
         strokeLinecap="round"
       />
 
       <path
-        d="M5 6V30"
+        d="M5 4V26"
         stroke="currentColor"
         strokeWidth="3.5"
         strokeLinecap="round"
@@ -40,7 +41,7 @@ export function EMLogo() {
 
       {/* M */}
       <path
-        d="M25 30V6L33 18L41 6V30"
+        d="M25 26V4L33 15L41 4V26"
         stroke="currentColor"
         strokeWidth="3.5"
         strokeLinecap="round"
